@@ -1,4 +1,4 @@
-# Social_Media_Navigation_Menu_Template
+# Social_Media_Navigation_Menu_Trick2
 
 **If you're looking for a social media navigation menu, check out my code ♥️📲**
 
