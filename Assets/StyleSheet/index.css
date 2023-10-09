@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > a {
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 238, 205);
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+body > a > i {
+  font-size: 70px;
+  color: cornflowerblue;
+}
+body > a:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav {
+  position: absolute;
+  width: 100px;
+  height: 400px;
+  /* border: 1px solid black; */
+  transform: rotate3d(1, 1, 1, 295deg);
+  transform-style: preserve-3d;
+}
+.nav > ul {
+  transform-style: preserve-3d;
+}
+.nav > ul > li {
+  height: 100px;
+  border: 1px solid black;
+  list-style-type: none;
+  transform-style: preserve-3d;
+  background-color: cornflowerblue;
+  transition: 1s;
+  position: relative;
+  box-shadow: -40px 20px 10px gray;
+}
+.nav > ul > li:hover {
+  transform: translate(30px, -10px);
+}
+.nav > ul > li:hover > a > i {
+  color: white;
+}
+.nav > ul > li > a {
+  /* background-color: purple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
+  color: black;
+  transform-style: preserve-3d;
+  border-bottom: 1px solid black;
+}
+.nav > ul > li > div:nth-of-type(1) {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  transform-origin: top;
+  transition: 1s;
+  opacity: 0;
+  border: 1px solid black;
+}
+.nav > ul > li > div:nth-of-type(2) {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0px;
+  left: -20px;
+  background-color: cornflowerblue;
+  transform-origin: right;
+  transform: rotateY(90deg);
+  transition: 1s;
+  z-index: 3333;
+  border: 1px solid black;
+}
+.nav > ul > li > div:nth-of-type(3) {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  left: 0;
+  background-color: cornflowerblue;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  opacity: 1;
+  transition: 1s;
+}
+.nav > ul > li:nth-of-type(4) > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  left: 0;
+  background-color: cornflowerblue;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  transition: 1s;
+  border: 1px solid black;
+}/*# sourceMappingURL=index.css.map */
